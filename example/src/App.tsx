@@ -6,7 +6,7 @@ import { ComposeViewView } from 'react-native-compose-view';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ComposeViewViewManager color="#32a852" style={styles.box} />
+      <ComposeViewView color="#32a852" style={styles.box} />
     </View>
   );
 }
