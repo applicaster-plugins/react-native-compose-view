@@ -8,8 +8,14 @@
 import Foundation
 import SwiftUI
 
-@objcMembers class SwiftUIViewProxy: NSObject {
-    private var vc = UIHostingController(rootView: SwiftUIView())
+@objcMembers class SwiftUIViewProxy {//: NSObject {
+    private var vc:UIHostingController<SwiftUIView>
+    
+    init() {
+        let bundle = Bundle(for: type(of: self))
+        self.vc = UIHostingController(rootView: SwiftUIView(bundle: bundle))
+    }
+    
     var view: UIView {
         return vc.view
     }

@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/applicaster-plugins/react-native-compose-view.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
-
+  s.resources =  "ios/**/*.{xib,png,xcassets}"
+  
   s.dependency "React-Core"
   s.static_framework = false
 end
