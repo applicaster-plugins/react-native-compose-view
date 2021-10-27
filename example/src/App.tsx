@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 60,
-    height: 60,
+    width: 300,
+    height: 500,
     marginVertical: 20,
   },
 });
