@@ -33,7 +33,7 @@ class ComposeViewViewManager : SimpleViewManager<View>() {
   fun setColor(view: View, color: String) {
     view.setBackgroundColor(Color.parseColor(color))
       view.setOnClickListener {
-          startComposeActivity(view.context)
+//          startComposeActivity(view.context)
       }
   }
 
@@ -74,10 +74,4 @@ class ComposeViewViewManager : SimpleViewManager<View>() {
             }
         }
     }
-
-
-}
-fun startComposeActivity(context: Context?) {
-    val intent = Intent(context, ComposeActivity::class.java)
-    context?.startActivity(intent)
 }
